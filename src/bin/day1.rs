@@ -24,8 +24,6 @@ fn main() {
     for item in left {
         let count = right.iter().filter(|&&x| x == item).count();
         similarity += count as i32 * item;
-        println!("{item} appears {count} times in right");
-
     }
 
     println!("Part 2 similarity score: {}", similarity);
